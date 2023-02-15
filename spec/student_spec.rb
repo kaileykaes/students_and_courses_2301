@@ -21,7 +21,9 @@ RSpec.describe Student do
 
   describe '#logs' do
     it 'logs student scores in @scores hash' do
-
+      @student.log_score(89)
+      @student.log_score(78)
+      expect(student.scores).to eq([89, 78])
     end
   end
 end
