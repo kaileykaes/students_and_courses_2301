@@ -1,5 +1,6 @@
 class Student
-  attr_reader :name, :age, :scores
+  attr_reader :name, :age
+  attr_accessor :scores
 
   def initialize(student_details)
     @name = student_details[:name]
@@ -17,5 +18,4 @@ class Student
     end
     @scores.reduce(:+) / @scores.length
   end
-  require 'pry'; binding.pry
 end

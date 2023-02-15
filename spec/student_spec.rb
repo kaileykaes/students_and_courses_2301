@@ -27,7 +27,7 @@ RSpec.describe Student do
       expect(student.scores).to eq([89, 78])
     end
 
-    # xit 'calculates student average score'
+    #   it 'calculates student average score'
     #   student = Student.new({name: "Morgan", age: 21})  
     #   student.log_score(89)
     #   student.log_score(78)
