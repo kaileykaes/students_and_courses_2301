@@ -10,4 +10,12 @@ class Course
   def enroll(student)
     @students << student
   end
+
+  def full?
+    if @students.length >= capacity
+      true
+    else 
+      false
+    end
+  end
 end
