@@ -13,5 +13,10 @@ RSpec.describe Gradebook do
       gradebook = Gradebook.new('Keith Ward')
       expect(gradebook.courses).to eq([])
     end
+
+    it 'lists all students' 
+
+    it 'returns students with low grades'
+    
   end
 end
