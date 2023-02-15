@@ -7,4 +7,15 @@ class Student
     @scores = []
   end
 
+  def log_score(score)
+    @scores << score
+  end
+
+  def grade 
+    @scores.each do |score|
+      score.to_f
+    end
+    @scores.reduce(:+) / @scores.length
+  end
+  require 'pry'; binding.pry
 end
