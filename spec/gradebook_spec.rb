@@ -8,5 +8,10 @@ RSpec.describe Gradebook do
       gradebook = Gradebook.new('Keith Ward')
       expect(gradebook).to be_a(Gradebook)
     end
+
+    it 'has space for courses' do
+      gradebook = Gradebook.new('Keith Ward')
+      expect(gradebook.courses).to eq([])
+    end
   end
 end
