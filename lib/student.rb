@@ -13,9 +13,6 @@ class Student
   end
 
   def grade 
-    @scores.each do |score|
-      score.to_f
-    end
-    @scores.reduce(:+) / @scores.length
+    (@scores.sum).to_f / @scores.length
   end
 end

@@ -6,4 +6,6 @@ class Gradebook
     @courses = []
   end
 
+  
+
 end
